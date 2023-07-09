@@ -1,13 +1,10 @@
-function power(num0,num1){
+var naame=prompt("userName")
+var pas=prompt("pasword")
 
-if (num0==undefined){
-num0=1
+if (pas.length<7){
+alert("pasword cant be under 7 char")
 }
-if(num1==undefined){
-    num1=1
+else{
+alert("thanks")
 }
-return num0**num1
-
-}
-var y=power(12,2)
-alert(y)
+alert("your nane: "+naame+"/n"+"pas: "+pas)
