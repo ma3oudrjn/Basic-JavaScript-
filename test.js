@@ -1,9 +1,8 @@
-var login=prompt('name: bodo binam')
-var 
-user=[
-'masoud',
-'ali',
-'makhmod'
 
+var database=[
+{id:12,name:"masoud",family:"ranjbaran"},
+{id:135,name:"ali",family:"havig abadi"},
+{id:94,name:"hossein",family:"kosid abadi"}
 ]
-console.log(user.includes(login))
+
+console.table([1,2,3,4,6])
