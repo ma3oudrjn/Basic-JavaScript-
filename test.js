@@ -1,5 +1,5 @@
-var x=['masoud',3861334771,'ranjbaran',true]
-console.log(x)
-console.log(x.length)
+var animal=[
+{id:1,namee:"gav",age:12},
+{id:2,namee:"mamd",age:122},
 
-//end
+];
