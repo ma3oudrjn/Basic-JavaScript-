@@ -1,4 +1,4 @@
-var x='masoud ranjbaran'
-for(var i=0;i<x.length;i++){
-    console.log(x[i])
-}
+var x=['masoud',3861334771,'ranjbaran',true]
+console.log(x)
+    
+//end
