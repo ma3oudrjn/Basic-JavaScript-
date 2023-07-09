@@ -1,10 +1,9 @@
 var naame=prompt("userName")
-var pas=prompt("pasword")
+var x=naame.search("java")
+if (x==-1){
 
-if (pas.length<7){
-alert("pasword cant be under 7 char")
+    console.log("not finde")
 }
 else{
-alert("thanks")
+    console.log("char at:" + x)
 }
-alert("your name: "+naame+"\n"+"pas: "+pas)
