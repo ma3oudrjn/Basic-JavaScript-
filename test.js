@@ -1,9 +1,15 @@
-function test(number){
-if(number % 2==0){
-    alert("zoj")
+function run(num0,num1){
+
+if (num0==undefined){
+num0=1
 }
-else{
-    alert("fard")
+if(num1==undefined){
+    num1=1
 }
+var x=num0+num1
+alert("________________")
+alert(x)
+alert("________________")
+
 }
-test(12)
+run(10,)
