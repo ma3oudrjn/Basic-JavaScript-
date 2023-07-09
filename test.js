@@ -1,4 +1,4 @@
-function run(num0,num1){
+function power(num0,num1){
 
 if (num0==undefined){
 num0=1
@@ -6,10 +6,8 @@ num0=1
 if(num1==undefined){
     num1=1
 }
-var x=num0+num1
-alert("________________")
-alert(x)
-alert("________________")
+return num0**num1
 
 }
-run(10,)
+var y=power(12,2)
+alert(y)
