@@ -1,6 +1,9 @@
-function e1(x,y){
-    return x+y;
+function test(number){
+if(number % 2==0){
+    alert("zoj")
 }
-for (let i=0;i<10;i++){
-    e1(3,2);
+else{
+    alert("fard")
 }
+}
+test(12)
