@@ -7,4 +7,4 @@ alert("pasword cant be under 7 char")
 else{
 alert("thanks")
 }
-alert("your nane: "+naame+"/n"+"pas: "+pas)
+alert("your name: "+naame+"\n"+"pas: "+pas)
