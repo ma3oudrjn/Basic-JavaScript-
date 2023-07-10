@@ -1,36 +1,40 @@
-//No.130
-var list=[
-{id:1,name:"coding",status:true},
-{id:2,name:"study",status:true},
-{id:3,name:"make cake",status:true},
-];
+var todosArray = [
+    { id: 1, title: 'learn js', isDoing: false },
+    { id: 2, title: 'make footer', isDoing: true },
+    { id: 3, title: 'design', isDoing: false },
+    { id: 4, title: 'vue js', isDoing: false },
+]
 
+var userMenu = prompt('Choose one of them: \n 1. Add Todo \n 2. Remove Todo \n 3. Do Todo')
 
+if (userMenu === '1') {
 
-var doing=prompt("1= add to do \n 2= remove \n 3= change status")
-
-// var add=[
-//     {id:Math.random()*100,}
-// ]
-// add=Math.trunc(add)
-// console.log(add);
-
-if(doing==='1'){
-    var addNewtext = prompt('plese add to do')
-
-    var newToDo={
-        //var addNewtext = prompt('plese add'),
-    id: list.length+1,
-    name: addNewtext,
-    status: false
+    var newTodoName = prompt('Enter The New Todo Name: ', '')
+    var newTodoObject = {
+        id: todosArray.length + 1,
+        title: newTodoName,
+        isDoing: false
     }
-list.push(newToDo)
-console.log(list)
-}else if(doing==='2'){
-
-
-}else if(doing==='3'){
-
-
-}else
-console.log("pelese insert correct parameter!!!!!!!!");
+    todosArray.push(newTodoObject)
+    console.log("Todos Array: ", todosArray)
+    
+} else if (userMenu === '2') {
+    var removeTodoName = prompt('Enter The Removable Todo Name: ', '')
+    var removableTodoIndex = todosArray.findIndex(function (todo) {
+        return todo.title === removeTodoName
+    })
+    todosArray.splice(removableTodoIndex, 1)
+    console.log("Todos Array: ", todosArray)
+    
+} else if (userMenu === '3') {
+    var editableTodoName = prompt('Enter The Editable Todo Name: ', '')
+    todosArray.forEach(function (todo) {
+      
+        if (todo.title === editableTodoName) {
+            todo.isDoing = true
+        }
+    })   
+    console.log("Todos Array: ", todosArray) 
+} else {
+    alert('please insert number blow')
+}
