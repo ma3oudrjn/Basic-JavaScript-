@@ -1,11 +1,15 @@
-var input=prompt("insert name")
-var self=input.split('')
-var w=self.reverse();
-var reversstring=self.join('')
-console.log(reversstring);
-if(reversstring==input){
-
-    console.log("same");
-}else{
-    console.log("not same");
+var cities = {
+    tehran: ['Tehran', 'Shahryar', 'rudehen', 'bumehen'],
+    shiraz: ['shiraz', 'fars', 'jamshid', 'shiraz pars'],
+    mashhad: ['Mashhad', 'Fariman', 'Guchan'],
+    tabriz: ['Tabriz', 'Marand', 'Jolfa', 'Ahar'],
 }
+
+var startProvine = prompt('Etnet The Provine: ')
+
+var mainProvinceCities = cities[startProvine]
+
+
+mainProvinceCities.forEach(function (city) {
+    console.log(city)
+});
