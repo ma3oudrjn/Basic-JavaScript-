@@ -1,15 +1,9 @@
-var cities = {
-    tehran: ['Tehran', 'Shahryar', 'rudehen', 'bumehen'],
-    shiraz: ['shiraz', 'fars', 'jamshid', 'shiraz pars'],
-    mashhad: ['Mashhad', 'Fariman', 'Guchan'],
-    tabriz: ['Tabriz', 'Marand', 'Jolfa', 'Ahar'],
-}
+var furit={
+ box1: ['apple','moz','sib','shalil'],
+ box2: ['dildo','cocunat','pinapple'],
+ box3: ['tablo','medad','khodkar']
 
-var startProvine = prompt('Etnet The Provine: ')
-
-var mainProvinceCities = cities[startProvine]
-
-
-mainProvinceCities.forEach(function (city) {
-    console.log(city)
-});
+};
+var kindofBox=prompt('what box you like?')
+var outt=furit[kindofBox]
+console.log(outt);
